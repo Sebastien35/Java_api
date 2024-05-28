@@ -1,0 +1,16 @@
+package com.sebastien.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sebastien.demo.repository.ValidationRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class ValidationService {
+
+	@Autowired
+	private ValidationRepository validationRepo;
+}

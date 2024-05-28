@@ -5,4 +5,6 @@
     <fullyQualifiedTypeName name="com.sebastien.demo.service.UserService"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.sebastien.demo.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.sebastien.demo.roleName"/>
+    <fullyQualifiedTypeName name="java.time.Instant"/>
 </qualifiedTypeNameHistroy>

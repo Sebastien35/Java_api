@@ -1,0 +1,25 @@
+package com.sebastien.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sebastien.demo.entity.User;
+import com.sebastien.demo.entity.Validation;
+import com.sebastien.demo.repository.ValidationRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class ValidationService {
+
+	@Autowired
+	private ValidationRepository validationRepo;
+	
+	private void save(User user) {
+		Validation validation = new Validation();
+		validation.setUser(user);
+		
+		
+	}
+}

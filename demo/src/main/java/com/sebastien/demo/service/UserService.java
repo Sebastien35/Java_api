@@ -8,6 +8,7 @@ import com.sebastien.demo.roleName;
 import com.sebastien.demo.entity.Role;
 import com.sebastien.demo.entity.User;
 import com.sebastien.demo.repository.UserRepository;
+import com.sebastien.demo.service.ValidationService;
 
 import lombok.AllArgsConstructor;
 
@@ -19,6 +20,8 @@ public class UserService {
 	private UserRepository userRepo;
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
+	@Autowired
+	private ValidationService validationService;
 	
 	public void register(User user) {
 		if(user.getEmail().indexOf("@") == -1) {
@@ -36,7 +39,8 @@ public class UserService {
 		user.setRole(roleUser);
 		
 		
-		this.userRepo.save(user);
+		user = this.userRepo.save(user);
+		this.validationService
 	}
 
 }

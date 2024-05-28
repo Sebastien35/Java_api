@@ -1,0 +1,9 @@
+package com.sebastien.demo.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+
+public class ValidationRepository extends CrudRepository<Validation, Integer> {
+
+}
