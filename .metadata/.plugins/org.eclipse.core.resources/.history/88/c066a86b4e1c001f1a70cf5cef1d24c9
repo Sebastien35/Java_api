@@ -1,0 +1,5 @@
+package com.sebastien.demo.security;
+
+public class WebSecurityConfig {
+
+}

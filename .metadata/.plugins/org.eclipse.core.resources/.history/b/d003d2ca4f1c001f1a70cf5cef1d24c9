@@ -1,0 +1,5 @@
+package com.sebastien.demo.entity;
+
+public class Role {
+
+}

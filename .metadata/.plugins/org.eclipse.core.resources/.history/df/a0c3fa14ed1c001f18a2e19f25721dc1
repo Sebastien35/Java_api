@@ -1,0 +1,23 @@
+package com.sebastien.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sebastien.demo.entity.User;
+import com.sebastien.demo.repository.UserRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class UserService {
+	
+	@Autowired
+	private UserRepository userRepo;
+	
+	
+	public void register(User user) {
+		this.userRepo.save(user);
+	}
+
+}

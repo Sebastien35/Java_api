@@ -1,0 +1,9 @@
+package com.sebastien.demo.repository;
+
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public class userRepository extends CrudRepository<User, Integer> {
+
+}

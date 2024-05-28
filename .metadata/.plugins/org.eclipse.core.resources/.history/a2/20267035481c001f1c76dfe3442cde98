@@ -1,0 +1,10 @@
+package com.sebastien.demo.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.sebastien.API.model.job;
+
+@Repository
+public interface jobRepository extends CrudRepository<job, Long>{
+}
